@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>/u/shotteh22's loading gif to css-only by /u/forkafork</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		body{
+			background:#000;
+			/*background:#ddd;*/
+			position:fixed;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+		}
+		.loader{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -100px;/*
+			background: #fff;
+			border-radius: 6px;
+			box-shadow: 0 0 6px -2px #666;*/
+			transform: rotate(45deg);
+		}
+		.square{
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			background: #fff;
+			border-radius: 3px;
+			left: 70px;
+			top: 5px;
+		}
+		#sqr0{
+			left: 5px;
+			top: 5px;
+			animation:sqr0 12s ease infinite;
+		}@keyframes sqr0{
+			     0%{left:  5px;top:  5px;}
+			 7.142%{left:  5px;top:  5px;}
+			 8.928%{left: 70px;top:  5px;}
+			19.642%{left: 70px;top:  5px;}
+			21.428%{left:135px;top:  5px;}
+			32.142%{left:135px;top:  5px;}
+			33.928%{left:135px;top: 70px;}
+			44.642%{left:135px;top: 70px;}
+			46.428%{left: 70px;top: 70px;}
+			57.142%{left: 70px;top: 70px;}
+			58.928%{left: 70px;top:135px;}
+			69.642%{left: 70px;top:135px;}
+			71.428%{left:  5px;top:135px;}
+			82.142%{left:  5px;top:135px;}
+			83.928%{left:  5px;top: 70px;}
+			94.642%{left:  5px;top: 70px;}
+			96.428%{left:  5px;top:  5px;}
+		}
+
+		#sqr1{
+			left: 70px;
+			top: 5px;
+			animation:sqr1 12s ease infinite;
+		}@keyframes sqr1{
+			     0%{left: 70px;top:  5px;}
+			 5.357%{left: 70px;top:  5px;}
+			 7.142%{left:135px;top:  5px;}
+			17.857%{left:135px;top:  5px;}
+			19.642%{left:135px;top: 70px;}
+			30.357%{left:135px;top: 70px;}
+			32.142%{left: 70px;top: 70px;}
+			42.857%{left: 70px;top: 70px;}
+			44.642%{left: 70px;top:135px;}
+			55.357%{left: 70px;top:135px;}
+			57.142%{left:  5px;top:135px;}
+			67.857%{left:  5px;top:135px;}
+			69.642%{left:  5px;top: 70px;}
+			80.357%{left:  5px;top: 70px;}
+			82.142%{left:  5px;top:  5px;}
+			92.857%{left:  5px;top:  5px;}
+			94.642%{left: 70px;top:  5px;}
+		}
+
+		#sqr2{
+			left: 135px;
+			top: 5px;
+			animation:sqr2 12s ease infinite;
+		}@keyframes sqr2{
+			     0%{left:135px;top:  5px;}
+ 			 3.571%{left:135px;top:  5px;}
+ 			 5.357%{left:135px;top: 70px;}
+			16.071%{left:135px;top: 70px;}
+			17.857%{left: 70px;top: 70px;}
+			28.571%{left: 70px;top: 70px;}
+			30.357%{left: 70px;top:135px;}
+			41.071%{left: 70px;top:135px;}
+			42.857%{left:  5px;top:135px;}
+			53.571%{left:  5px;top:135px;}
+			55.357%{left:  5px;top: 70px;}
+			66.071%{left:  5px;top: 70px;}
+			67.857%{left:  5px;top:  5px;}
+			78.571%{left:  5px;top:  5px;}
+			80.357%{left: 70px;top:  5px;}
+			91.071%{left: 70px;top:  5px;}
+			92.857%{left:135px;top:  5px;}
+		}
+
+		#sqr3{
+			left: 5px;
+			top: 70px;
+			animation:sqr3 12s ease infinite;
+		}@keyframes sqr3{
+			     0%{left:  5px;top: 70px;}
+			 8.928%{left:  5px;top: 70px;}
+			10.714%{left:  5px;top:  5px;}
+			21.428%{left:  5px;top:  5px;}
+			23.214%{left: 70px;top:  5px;}
+			33.928%{left: 70px;top:  5px;}
+			35.714%{left:135px;top:  5px;}
+			46.428%{left:135px;top:  5px;}
+			48.214%{left:135px;top: 70px;}
+			58.928%{left:135px;top: 70px;}
+			60.714%{left: 70px;top: 70px;}
+			71.428%{left: 70px;top: 70px;}
+			73.214%{left: 70px;top:135px;}
+			83.928%{left: 70px;top:135px;}
+			85.714%{left:  5px;top:135px;}
+			96.428%{left:  5px;top:135px;}
+			98.214%{left:  5px;top: 70px;}
+		}
+
+		#sqr4{
+			left: 70px;
+			top: 70px;
+			animation:sqr4 12s ease infinite;
+		}@keyframes sqr4{
+			     0%{left: 70px;top: 70px;}
+			 1.785%{left: 70px;top:135px;}
+			12.499%{left: 70px;top:135px;}
+			14.285%{left:  5px;top:135px;}
+			24.999%{left:  5px;top:135px;}
+			26.785%{left:  5px;top: 70px;}
+			37.499%{left:  5px;top: 70px;}
+			39.285%{left:  5px;top:  5px;}
+			49.999%{left:  5px;top:  5px;}
+			51.785%{left: 70px;top:  5px;}
+			62.499%{left: 70px;top:  5px;}
+			64.285%{left:135px;top:  5px;}
+			74.999%{left:135px;top:  5px;}
+			76.785%{left:135px;top: 70px;}
+			87.499%{left:135px;top: 70px;}
+			89.285%{left: 70px;top: 70px;}
+		}
+
+		#sqr5{
+			left: 135px;
+			top: 70px;
+			animation:sqr5 12s ease infinite;
+		}@keyframes sqr5{
+			     0%{left:135px;top: 70px;}
+			 1.785%{left:135px;top: 70px;}
+			 3.571%{left: 70px;top: 70px;}
+			14.285%{left: 70px;top: 70px;}
+			16.071%{left: 70px;top:135px;}
+			26.785%{left: 70px;top:135px;}
+			28.571%{left:  5px;top:135px;}
+			39.285%{left:  5px;top:135px;}
+			41.071%{left:  5px;top: 70px;}
+			51.785%{left:  5px;top: 70px;}
+			53.571%{left:  5px;top:  5px;}
+			64.285%{left:  5px;top:  5px;}
+			66.071%{left: 70px;top:  5px;}
+			76.785%{left: 70px;top:  5px;}
+			78.571%{left:135px;top:  5px;}
+			89.285%{left:135px;top:  5px;}
+			91.071%{left:135px;top: 70px;}
+		}
+
+		#sqr6{
+			left: 5px;
+			top: 135px;
+			animation:sqr6 12s ease infinite;
+		}@keyframes sqr6{
+			     0%{left:  5px;top:135px;}
+			10.714%{left:  5px;top:135px;}
+			12.499%{left:  5px;top: 70px;}
+			23.214%{left:  5px;top: 70px;}
+			24.999%{left:  5px;top:  5px;}
+			35.714%{left:  5px;top:  5px;}
+			37.499%{left: 70px;top:  5px;}
+			48.214%{left: 70px;top:  5px;}
+			49.999%{left:135px;top:  5px;}
+			60.714%{left:135px;top:  5px;}
+			62.499%{left:135px;top: 70px;}
+			73.214%{left:135px;top: 70px;}
+			74.999%{left: 70px;top: 70px;}
+			85.714%{left: 70px;top: 70px;}
+			87.499%{left: 70px;top:135px;}
+			98.214%{left: 70px;top:135px;}
+			99.999%{left:  5px;top:135px;}
+		}
+		#next{position: fixed; top:0; bottom:0; left:0; right:0;}
+	</style>
+</head>
+<body>
+	<div class="loader">
+		<div class="square" id="sqr0"></div>
+		<div class="square" id="sqr1"></div>
+		<div class="square" id="sqr2"></div>
+		<div class="square" id="sqr3"></div>
+		<div class="square" id="sqr4"></div>
+		<div class="square" id="sqr5"></div>
+		<div class="square" id="sqr6"></div>
+	</div>
+	<a href="./index0g.html" id="next"></a>
+</body>
+</html>
